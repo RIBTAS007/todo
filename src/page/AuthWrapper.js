@@ -4,7 +4,11 @@ import loadingImage from "../img/loadingImage.gif";
 function AuthWrapper({ children }) {
   const { isLoading, error } = useAuth0();
   if (isLoading) {
-    return <img src={loadingImage} alt="spinner" />;
+    return (
+      <section className="authWrapper">
+        <img src={loadingImage} alt="spinner" />
+      </section>
+    );
   }
   if (error) {
     return <h1>{error.message}</h1>;

@@ -1,9 +1,9 @@
-import DisplayTodos from "./DisplayTodos";
+import DisplayTodos from "../components/DisplayTodos";
 import React, { Fragment } from "react";
 import "../css/main.css";
 import { motion } from "framer-motion";
-import Todos from "./Todos";
-import Header from "./Header";
+import Todos from "../components/Todos";
+import Header from "../components/Header";
 
 function TodoHomePage() {
   return (

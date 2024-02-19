@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Navigate } from "react-router-dom";
-import TodoLoginPage from "../components/TodoLoginPage";
+import TodoLoginPage from "./TodoLoginPage";
 
 export default function publicRoute() {
   return [

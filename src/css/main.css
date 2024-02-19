@@ -223,6 +223,16 @@ body {
   border-radius: 20px;
 }
 
+.authWrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.authWrapper img {
+  width: 150px;
+}
+
 @media Screen and (max-width: 640px) {
   .displaytodos {
     overflow: hidden;

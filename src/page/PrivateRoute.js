@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import AppLayout from "./AppLayout";
 
-import TodoHomePage from "../components/TodoHomePage";
+import TodoHomePage from "./TodoHomePage";
 import Error from "./Error";
 
 export default function privateRoute() {
