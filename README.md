@@ -1,4 +1,4 @@
-# TODO LIST
+# Zen Todo App
 
 ## Features
 
