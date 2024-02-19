@@ -1,4 +1,4 @@
-# Zen Todo App
+# Task Zenith App
 
 ## Features
 

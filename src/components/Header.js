@@ -14,7 +14,7 @@ const Header = () => {
         transition={{ type: "spring", duration: 0.5 }}
         whileHover={{ scale: 1.1 }}
       >
-        Zen Todo
+        Task Zenith
       </motion.h1>
       <motion.h5>
         Made by{" "}
