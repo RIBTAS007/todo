@@ -8,6 +8,7 @@ import {
 } from "../redux/reducer";
 import TodoItem from "./TodoItem";
 import { AnimatePresence, motion } from "framer-motion";
+import Button from "./Button";
 
 // This component will display the todo items
 const mapStateToProps = (state) => {
@@ -30,27 +31,12 @@ const DisplayTodos = (props) => {
   return (
     <div className="displaytodos">
       <div className="buttons">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={() => setSort("active")}
-        >
-          Active
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        <Button onClick={() => setSort("active")} name={"Active"}></Button>
+        <Button
           onClick={() => setSort("completed")}
-        >
-          Completed
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={() => setSort("all")}
-        >
-          All
-        </motion.button>
+          name={"Completed"}
+        ></Button>
+        <Button onClick={() => setSort("all")} name={"All"}></Button>
       </div>
       <ul>
         <AnimatePresence>
