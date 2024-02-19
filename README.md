@@ -13,13 +13,13 @@
 
 ## App View
 
-![Logging Screen](./img/t1.png)
+![Logging Screen](./src/img/t1.png)
 
-![HomePage](./img/t2.png)
+![HomePage](./src/img/t2.png)
 
-![Todo List](./img/t3.png)
+![Todo List](./src/img/t3.png)
 
-![Edit Option](./img/t4.png)
+![Edit Option](./src/img/t4.png)
 
 ## Tech Stack
 
