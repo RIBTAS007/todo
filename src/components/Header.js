@@ -16,6 +16,10 @@ const Header = () => {
       >
         Todo App
       </motion.h1>
+      <motion.h5>
+        Made by{" "}
+        <a href="https://www.linkedin.com/in/satbir007/">Satbir Singh 🚀</a>
+      </motion.h5>
       {isUser ? (
         <Button
           onClick={() => {

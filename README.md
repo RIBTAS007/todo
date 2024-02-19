@@ -2,14 +2,14 @@
 
 ## Features
 
-* Google authentication to show app content.
-* Once Application Starts, the user see a List of todos and an option to add a new todo.
-* Once the user completes a todo, the user can check mark the todo and it should be marked as "done".
-* User can aso edit the todo item.
-* User can filter items based on all, completed and Active section.
-* Create React App is being to generate starter files.
-* Code is pushed to the github repository and deployed using github pages.
-* ReadMe file with steps to run the project is added.
+- AuthO authentication to show app content.
+- Once Application Starts, the user see a List of todos and an option to add a new todo.
+- Once the user completes a todo, the user can check mark the todo and it should be marked as "done".
+- User can aso edit the todo item.
+- User can filter items based on all, completed and Active section.
+- Create React App is being used to generate starter files.
+- Code is pushed to the github repository and deployed using netlify.
+- ReadMe file with steps to run the project is added.
 
 ## App View
 
@@ -21,11 +21,13 @@
 
 ![Edit Option](./img/t4.png)
 
-
 ## Tech Stack
 
-* React.js
-* Framer Motion (For animation)
+- [React.js](https://react.dev/)
+- [React Router](https://reactrouter.com/en/main)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Auth0](https://auth0.com/)
 
 ## Getting Started with Create React App
 
@@ -67,7 +69,6 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 
 ### Learn More
 

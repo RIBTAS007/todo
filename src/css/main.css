@@ -128,8 +128,18 @@ body {
 }
 
 .header h1 {
-  margin: 2rem;
+  margin: 2rem 2rem 0.6rem 2rem;
   color: white;
+}
+
+.header h5 {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.header h5 > a {
+  color: #4deeea;
+  margin-bottom: 3rem;
 }
 
 .login {
