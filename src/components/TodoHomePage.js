@@ -3,10 +3,12 @@ import React, { Fragment } from "react";
 import "../css/main.css";
 import { motion } from "framer-motion";
 import Todos from "./Todos";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // This Component will display the todo app upon successful authentication
 
-function TodoAuthContent() {
+function TodoHomePage() {
+  const { isAuthenticated, logout, user, isLoading } = useAuth0();
   return (
     <Fragment>
       <motion.h1
@@ -25,6 +27,9 @@ function TodoAuthContent() {
         transition={{ type: "spring", duration: 0.5 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
+        onClick={() => {
+          logout({ returnTo: window.location.origin });
+        }}
       >
         Sign Out
       </motion.button>
@@ -40,4 +45,4 @@ function TodoAuthContent() {
   );
 }
 
-export default TodoAuthContent;
+export default TodoHomePage;

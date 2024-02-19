@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect, useState } from "react";
-import TodoAuthContent from "./TodoAuthContent";
-import jwt_decode from "jwt-decode";
 import { motion } from "framer-motion";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // This component will do the Google authentication.
 
-function TodoAuth() {
+function TodoLoginPage() {
+  const { isAuthenticated, loginWithRedirect, logout, user, isLoading } =
+    useAuth0();
   // const [user, setUser] = useState({});
 
   // function handleCallbackResponse(response) {
@@ -36,24 +37,19 @@ function TodoAuth() {
   //   google.accounts.id.prompt();
   // }, []);
   return (
-    // <Fragment>
-    //   {Object.keys(user).length === 0 && (
-    //     <motion.h1
-    //       initial={{ y: -200 }}
-    //       animate={{ y: 0 }}
-    //       transition={{ type: "spring", duration: 0.5 }}
-    //       whileHover={{ scale: 1.1 }}
-    //     >
-    //       Sign in to get Started !
-    //     </motion.h1>
-    //   )}
-    //   <div id="signInDiv"></div>
-    //   {Object.keys(user).length !== 0 && (
-    //     <TodoAuthContent onAuthentication={handleSignOut} />
-    //   )}
-    // </Fragment>
-    <TodoAuthContent />
+    <Fragment>
+      <motion.h1
+        initial={{ y: -200 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", duration: 0.5 }}
+        whileHover={{ scale: 1.1 }}
+      >
+        Sign in to get Started !
+      </motion.h1>
+
+      <button onClick={loginWithRedirect}>Sign In</button>
+    </Fragment>
   );
 }
 
-export default TodoAuth;
+export default TodoLoginPage;
